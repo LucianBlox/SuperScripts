@@ -1,0 +1,140 @@
+local ChooseGui = Instance.new("ScreenGui")
+local ChooseOption = Instance.new("ImageButton")
+local Title = Instance.new("TextLabel")
+local Welcome = Instance.new("TextLabel")
+local SupportedGames = Instance.new("ImageButton")
+local SupportedGamesText = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local CloseText = Instance.new("TextLabel")
+local Loader = Instance.new("ImageButton")
+local LoaderText = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+
+ChooseGui.Name = "ChooseGui"
+ChooseGui.Parent = game.CoreGui
+ChooseGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ChooseGui.ResetOnSpawn = false
+
+ChooseOption.Name = "ChooseOption"
+ChooseOption.Parent = ChooseGui
+ChooseOption.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ChooseOption.BackgroundTransparency = 1.000
+ChooseOption.Position = UDim2.new(0.347397029, 0, 0.324921131, 0)
+ChooseOption.Size = UDim2.new(0, 347, 0, 176)
+ChooseOption.Image = "rbxassetid://2790390993"
+ChooseOption.ScaleType = Enum.ScaleType.Slice
+ChooseOption.SliceCenter = Rect.new(16, 16, 240, 240)
+
+Title.Name = "Title"
+Title.Parent = ChooseOption
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.210374638, 0, 0, 0)
+Title.Size = UDim2.new(0, 200, 0, 26)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Super Scripts"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 24.000
+
+Welcome.Name = "Welcome"
+Welcome.Parent = ChooseOption
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 1.000
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.213256478, 0, 0.145526201, 0)
+Welcome.Size = UDim2.new(0, 200, 0, 26)
+Welcome.Font = Enum.Font.SourceSans
+Welcome.Text = "Welcome, "..game.Players.LocalPlayer.Name
+Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.TextSize = 24.000
+
+SupportedGames.Name = "SupportedGames"
+SupportedGames.Parent = ChooseOption
+SupportedGames.BackgroundColor3 = Color3.fromRGB(0, 170, 127)
+SupportedGames.BackgroundTransparency = 1.000
+SupportedGames.Position = UDim2.new(0.207823396, 0, 0.444316328, 0)
+SupportedGames.Size = UDim2.new(0, 200, 0, 40)
+SupportedGames.Image = "rbxassetid://2790390993"
+SupportedGames.ImageColor3 = Color3.fromRGB(45, 194, 207)
+SupportedGames.ScaleType = Enum.ScaleType.Slice
+SupportedGames.SliceCenter = Rect.new(16, 16, 240, 240)
+
+SupportedGamesText.Name = "SupportedGamesText"
+SupportedGamesText.Parent = SupportedGames
+SupportedGamesText.AnchorPoint = Vector2.new(0.5, 0.5)
+SupportedGamesText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SupportedGamesText.BackgroundTransparency = 1.000
+SupportedGamesText.BorderSizePixel = 0
+SupportedGamesText.Position = UDim2.new(0.5, 0, 0.5, 0)
+SupportedGamesText.Size = UDim2.new(1, -5, 1, -5)
+SupportedGamesText.Font = Enum.Font.SourceSans
+SupportedGamesText.Text = "Supported Games"
+SupportedGamesText.TextColor3 = Color3.fromRGB(255, 255, 255)
+SupportedGamesText.TextSize = 25.000
+
+Close.Name = "Close"
+Close.Parent = ChooseOption
+Close.BackgroundColor3 = Color3.fromRGB(170, 0, 2)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.887713432, 0, 0.0367097855, 0)
+Close.Size = UDim2.new(0, 32, 0, 33)
+Close.Image = "rbxassetid://2790390993"
+Close.ImageColor3 = Color3.fromRGB(207, 0, 3)
+Close.ScaleType = Enum.ScaleType.Slice
+Close.SliceCenter = Rect.new(16, 16, 240, 240)
+
+CloseText.Name = "CloseText"
+CloseText.Parent = Close
+CloseText.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseText.BackgroundTransparency = 1.000
+CloseText.BorderSizePixel = 0
+CloseText.Position = UDim2.new(0.500200808, 0, 0.5, 0)
+CloseText.Size = UDim2.new(1.26922023, -5, 1.02651513, -5)
+CloseText.Font = Enum.Font.SourceSans
+CloseText.Text = "X"
+CloseText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseText.TextSize = 25.000
+
+Loader.Name = "Loader"
+Loader.Parent = ChooseOption
+Loader.BackgroundColor3 = Color3.fromRGB(0, 170, 127)
+Loader.BackgroundTransparency = 1.000
+Loader.Position = UDim2.new(0.207823396, 0, 0.729891658, 0)
+Loader.Size = UDim2.new(0, 200, 0, 40)
+Loader.Image = "rbxassetid://2790390993"
+Loader.ImageColor3 = Color3.fromRGB(45, 194, 207)
+Loader.ScaleType = Enum.ScaleType.Slice
+Loader.SliceCenter = Rect.new(16, 16, 240, 240)
+
+LoaderText.Name = "LoaderText"
+LoaderText.Parent = Loader
+LoaderText.AnchorPoint = Vector2.new(0.5, 0.5)
+LoaderText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoaderText.BackgroundTransparency = 1.000
+LoaderText.BorderSizePixel = 0
+LoaderText.Position = UDim2.new(0.5, 0, 0.5, 0)
+LoaderText.Size = UDim2.new(1, -5, 1, -5)
+LoaderText.Font = Enum.Font.SourceSans
+LoaderText.Text = "Loader"
+LoaderText.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoaderText.TextSize = 25.000
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(102, 45, 113)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(197, 66, 110))}
+UIGradient.Parent = ChooseOption
+
+Close.MouseButton1Click:Connect(function()
+	ChooseOption:TweenPosition(UDim2.new(2,0,2,0),"InOut","Quad",1.2)
+	wait(1.2)
+	ChooseGui:Destroy()
+	script:Destroy()
+end)
+
+Loader.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LucianBlox/SuperScripts/main/SSLS",true))()
+end)
+
+SupportedGames.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LucianBlox/SuperScripts/main/SupportedGames",true))()
+end)
