@@ -8,7 +8,7 @@ local GamePicture = Instance.new("ImageLabel")
 local Scroll = Instance.new("ScrollingFrame")
 local List = Instance.new("UIListLayout")
 
-local SupportedGamesTable = {4945803984,1962086868,4819690116}
+local SupportedGamesTable = {4945803984,1962086868,4819690116,3551150791}
 local AmountOfButtons = #SupportedGamesTable
 local MPS = game:GetService("MarketplaceService")
 local info1 = MPS:GetProductInfo(SupportedGamesTable[1])
@@ -184,3 +184,5 @@ CreateButton(1,"Tower of Hell - Medium")
 CreateButton(2,"Tower of Hell")
 
 CreateButton(3,"Towers of Agony")
+
+CreateButton(4,"The 13 Stud Jump")
