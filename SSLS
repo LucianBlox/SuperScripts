@@ -9,7 +9,7 @@ local Player = game.Players.LocalPlayer
 local Circle = Instance.new("ImageLabel")
 local m = Player:GetMouse()
 local Place = game.PlaceId
-local Games = {4945803984,1962086868,3582763398,4819690116}
+local Games = {4945803984,1962086868,3582763398,4819690116,3551150791}
 
 Circle.Name = "Circle"
 Circle.Parent = script
