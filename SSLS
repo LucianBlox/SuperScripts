@@ -269,11 +269,8 @@ Load.MouseButton1Click:connect(function()
 	if Place == 4819690116 then
 	game.ReplicatedStorage.Kick:FireServer()
 	end
-  if Place == 3551150791 then
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/LucianBlox/SuperScripts/main/The13StudJumpGUI", true))()
-  end
-	if Place ~= o then
-    Load.Text = "Not Found."
+	if Place == 3551150791 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LucianBlox/SuperScripts/main/The13StudJumpGUI", true))()
 	end
 end)
 end
