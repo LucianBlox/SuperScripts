@@ -270,7 +270,11 @@ Load.MouseButton1Click:connect(function()
 	game.ReplicatedStorage.Kick:FireServer()
 	end
 	if Place == 3551150791 then
+	Load.Text = "Game Found."
+	wait()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/LucianBlox/SuperScripts/main/The13StudJumpGUI", true))()
+	wait(2)
+	frameout()
 	end
 end)
 end
