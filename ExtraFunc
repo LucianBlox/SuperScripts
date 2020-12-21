@@ -1,1 +1,6 @@
+local LucianSploit = {}
 
+LucianSploit.Print(Message)
+   if Message == nil then return end
+   print(Message)
+end
